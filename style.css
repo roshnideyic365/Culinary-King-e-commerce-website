@@ -1,0 +1,608 @@
+/*------------------------------------------------NAVBAR----------------------------------------*/
+.nav
+{
+    background-color: white;
+    z-index: 9;
+    padding-left: 50px;
+    padding-right: 50px;
+    display:flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.nav_top
+{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+.logo
+{
+    float:left;
+    width: 50%;
+}
+.logo img
+{
+    padding: 8px;
+    width:30%;
+    margin-left:10%;
+}
+.nav_side
+{
+    float:right;
+    width:45%;
+    margin-top: 20px;
+}
+.nav_side a
+{
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left:22px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    color: rgb(37, 0, 19);
+    font-weight: bold;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.nav_side a:hover
+{
+    color: rgb(253, 0, 84);
+    transition: all 1s ease;
+}
+/*-------------------------------------------FIRST CAROUSEL----------------------------------------*/
+.slide
+{
+    padding:0px;
+    height: 30px;
+}
+.slide .slide_container
+{
+    text-align:center;
+}
+.slide .slide_container .carousel-inner
+{
+    box-shadow: none;
+}
+.slide .slide_container .item
+{
+    width:100%;;
+    box-shadow: none;
+}
+.slide .slide_container .item .item_img
+{
+    width:100%;
+    overflow:hidden;
+    text-align:center;
+}
+.slide .slide_container .item .item_img img
+{
+    width:100%;
+    overflow: hidden;
+    height: 530px;
+}
+.slide_con
+{
+    background-image: url("images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+}
+.slide_con .slide_content
+{
+    padding-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.slide_con .slide_content h2
+{
+    color: white;
+    font-size: 430%;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+}
+.slide_con .slide_content h2 span
+{
+    font-size:40%;
+    opacity: 0.9;
+    font-weight: 400;
+    line-height: 20px;
+}
+.slide_con .slide_content .slide_btn
+{
+    margin-top:10%;
+    text-align: center;
+    width:100%;
+    position: relative;
+}
+.slide_con .slide_content .slide_btn a
+{
+    text-decoration: none;
+    font-size: large;
+    margin:32%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    text-align: center;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.slide_con .slide_content .slide_btn a:hover
+{
+    background-color: white;
+    color: rgb(37, 0, 19);
+    border: none;
+    border-bottom: 4px solid orange;
+    transition:0.5s;
+}
+/*------------------------------------------------SIDE----------------------------------------*/
+.side 
+{
+    margin-top:5%;
+    margin-bottom: 5%;
+    display: flex;
+    text-align: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+.side .left
+{
+    float: left;
+}
+.side .right
+{
+    float:right;
+    padding-left: 10%;
+}
+.side .right h2
+{
+    font-size: 250%;
+}
+.side .right p
+{
+    width: 50%;
+    font-size: 140%;
+    margin-left:25%;
+    margin-top: 8%;
+}
+.side .right .side_btn
+{
+    margin-top:3%;
+}
+.side .right .side_btn a
+{
+    text-decoration: none;
+    font-size: large;
+    margin:32%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    text-align: center;
+    border: 4px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.side .right .side_btn a:hover
+{
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 4px solid rgb(255, 34, 144);
+    transition:0.5s;
+}
+
+/*------------------------------------------------MAIN----------------------------------------*/
+.main
+{
+    background-image: url("images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh;
+}
+.main .main_content
+{
+    padding-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.main .main_content h2
+{
+    color: white;
+    background-color: rgb(0, 54, 0);
+    font-size: 380%;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 35px;
+    width:50%;
+    border-radius: 50%;
+}
+.main .main_content h2 span
+{
+    font-size:30%;
+    opacity: 0.9;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+/*--------------------------------------------PRODUCTS----------------------------------------*/
+.product
+{
+    padding-bottom: 50px;
+}
+.product h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(92, 0, 47);
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+.product .product_container
+{
+    display:flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.product .product_container .item
+{
+    width:25%;
+    margin: 10px;
+    height: 10%;
+}
+.product .product_container .item:hover
+{
+    box-shadow:0px 3px 65px 0px rgb(255, 189, 165);
+}
+.product .product_container .item .item_img
+{
+    width:100%;
+    height: 20%;
+    overflow:hidden;
+}
+.product .product_container .item .item_img img
+{
+    width:100%;
+    height: 20%;
+}
+.product .product_container .item .item_content
+{
+    text-align: center;
+}
+.product .product_container .item .item_content h3
+{
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    line-height: 2px;
+}
+.product .product_container .item .item_content p
+{
+    font-size: 15px;
+    line-height: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+.product .product_container .item .item_content a
+{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    color:rgb(212, 0, 106);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    text-align: center;
+    border: 3px solid rgb(212, 0, 106);
+    transition: 0.5s;
+}
+.product .product_container .item .item_content a:hover
+{
+    background-color: rgb(212, 0, 106);
+    color: white;
+    border: none;
+    transition:0.5s;
+}
+/*--------------------------------------------KEY HIGHLIGHTS----------------------------------------*/
+.keypoint
+{
+    padding:20px;
+}
+.keypoint h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(92, 0, 47);
+    font-size: 35px;
+    text-align: center;
+}
+.keypoint .key_container
+{
+    display: flex;
+}
+.keypoint .key_container .key_content
+{
+    width:40%;
+    padding:20px;
+    float:right;
+    margin-left: 10%;
+}
+.keypoint .key_container .key_content li
+{
+    list-style: none;
+    margin:15px;
+    padding:20px;
+    border-left:2px solid rgb(161, 0, 83);
+    color: rgb(37, 0, 19);
+    font-size:17px;
+    text-align: left;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.2);
+}
+.keypoint .key_container .key_img
+{
+    width:40%;
+    float:left;
+    margin-left:100px;
+}
+.keypoint .key_container .key_img img
+{
+    width:100%;
+
+}
+/*--------------------------------------------TEAM----------------------------------------*/
+.team
+{
+    padding: 50px;
+}
+.team h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    color: rgb(92, 0, 47);
+    font-size: 35px;
+    text-align: center;
+}
+.team .team_container
+{
+    display: flex;
+}
+.team .team_container .team_video
+{
+    width:50%;
+    padding:20px;
+}
+.team .team_container .team_video video
+{
+    width:100%;
+    border: 8px solid rgb(161, 0, 83);
+    outline: none;
+}
+.team .team_container .team_content
+{
+    width:40%;
+    padding:20px;
+    margin-left:50px;
+    margin-top: 4%;
+    font-size: large;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+}
+/*--------------------------------------------FEED----------------------------------------*/
+.feed
+{
+    background-image: url("images/feed.jpg");
+    background-size:cover;
+    padding: 50px;
+    text-align: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+}
+.feed h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.feed .feed_form
+{
+    text-align: center;
+}
+.feed .feed_form form
+{
+    padding:20px;
+}
+.feed .feed_form form input
+{
+    width:30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border:none;
+}
+.feed .feed_form form textarea
+{
+    width:30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border:none;
+}
+.feed .feed_form form button
+{
+    width:30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border:none;
+    background-color: rgb(161, 0, 83);
+    color: white;
+    border: 5px;
+}
+/*--------------------------------------------FOOTER----------------------------------------*/
+footer
+{
+    background-color: black;
+    padding:50px;
+}
+footer .pages
+{
+    text-align: center;
+}
+footer .pages h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    padding: 5px;
+    font-weight: bold;
+}
+footer .pages a
+{
+    text-decoration: none;
+    margin:10px;
+    color: rgba(255, 226, 243, 0.808);
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+}
+footer .pages a:hover
+{
+    color:white;
+}
+footer .doc
+{
+    text-align: center;
+}
+footer .doc h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .doc a
+{
+    text-decoration: none;
+    margin:10px;
+    color: rgba(255, 226, 243, 0.808);
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+footer .doc a:hover
+{
+    color:white;
+}
+footer .social
+{
+    text-align: center;
+}
+footer .social h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .contact
+{
+    text-align: center;
+}
+footer .contact h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .social a
+{
+    font-size: 30px;
+    text-decoration: none;;
+    color:rgba(247, 193, 224, 0.904);
+    margin:10px;
+}
+footer .social a:hover
+{
+    color:white;
+}
+footer .contact a
+{
+    font-size: 30px;
+    text-decoration: none;;
+    color:rgba(247, 193, 224, 0.904);
+    margin:10px;
+}
+footer .contact a:hover
+{
+    color:white;
+}
+footer p
+{
+    color:rgba(247, 178, 217, 0.726);
+}
+/*--------------------------------------------ABOUT US---------------------------------------*/
+.about_us
+{
+    padding:100px;
+}
+.about_us h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(92, 0, 47);
+    font-size: 33px;
+    text-align: center;
+}
+.about_us h5
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(92, 0, 47);
+    font-size: 15px;
+    text-align: center;
+}
+.about_us p
+{
+    text-align: center;
+    padding:15px;
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    line-height: 25px;
+}
+/*--------------------------------------------CONTACT---------------------------------------*/
+.contact_container
+{
+    padding: 100px;;
+}
+.contact_container h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(92, 0, 47);
+    font-size: 33px;
+    text-align: center;
+}
+.contact_container .g_map
+{
+    border:10px solid rgb(92, 0, 47);
+}
+.contact_container .contact_content
+{
+    padding:20px;
+}
+.contact_container .contact_content p
+{
+    padding:15px;
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    line-height: 25px;
+}
+/*--------------------------------------------CATERING---------------------------------------*/

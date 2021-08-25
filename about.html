@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Culinary King | About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- ----------------------------------------NAVBAR----------------------------------------------------->
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="250"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">ABOUT US</a>
+            <a href="summer.html">SUMMER SALE</a>
+            <a href="catering.html">CATERING</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+    <!-- -------------------------------------------ABOUT US--------------------------------------------------------->
+    <div class="about_us" style="padding-top:100px;">
+        <h2>WHO WE ARE</h2>
+        <div class="about_content">
+            <h5>Philly-proud. Cheese-centric. Legacy-inspired. Purveyors of Happiness.</h5>
+            <p>Walk into our shops and you'll notice there's just something in the air here (and it's not just the smell of cheese). It's magical. Meet a monger and hear a tale of cheesemakers near and far, explore a world of culinary delights, hit the prepared foods counter for deliciously easy eating. Walk by any counter and you'll hear plenty of "you gotta try this" and "mmm... what IS that," accompanied by that wide-eyed look that any food lover knows well. We share a taste of something incredible with everyone who walks through our doors. We make sure every visit to Culinary King. offers a bite of something that is delicious and maybe even life-changing. Pro-Tip: Ask our mongers for a bite of their favorite cheese pairing of the moment.</p>
+        </div>
+        <hr>
+        <h2>WE BRING PEOPLE TOGETHER.</h2>
+        <p>There's nothing like sharing an amazing meal around the table with the people you love--and of course, the power of food! Think of all the "you gotta try that" and the "WOW, what is that?" and even the "no way, I'm not trying that" that leads to great memories. With the traditions of the table, tales of Grandma's meatballs, and the giddiness that great food brings--we just eat it up.</p>
+        <hr>
+        <h2>OUR LOVE FOR FOOD DRIVES US TO BE EXPERTS.</h2>
+        <p>What's better than finding that new something that all your friends go crazy over? Before you know it, everyone’s calling you up saying, “Have you tried this yet?” and “Oh, try it like that and get ready to be wowed!” That’s the feeling we strive for everyday. Back that up with a dedication to knowing all there is about the food world—from learning about generations of cheesemakers, the way Prosciutto di Parma has been made for the same way for centuries, and the process for which rennet comes together with milk to become cheese. To be straight up, we are complete food nerds and proud of it.</p>
+    </div>
+    <!-- --------------------------------------------FEED--------------------------------------------------------->
+    <div class="feed">
+        <h2>WRITE A REVIEW</h2>
+        <div class="feed_form" method="post">
+        <form name="submit-googlesheet">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="Email ID"><br>
+            <input type="text" name="Number" placeholder="Contact Number"><br>
+            <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+    <!-- --------------------------------------------FOOTER-------------------------------------------------------->
+    <footer>
+        <div class="footer_logo">
+            <a href="index.html"><img src="images/logo.png" width="250"></a>
+        </div>
+        <div class="pages">  
+            <h3>Customer Care</h3>
+            <a href="about.html">About Us</a>|
+            <a href="summer.html">Summer Sale</a>|
+            <a href="catering.html">Catering</a>|
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Terms of Use</a>|
+            <a href="#">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.WhatsApp.com/send?phone=+910000000000" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel: +910000000000"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: roshnideyic365@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 Culinary King. All rights reserved.</p>
+    </footer>
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzmY7HJmUEupsd8UBLj-aTxEsPcKQEWFYaxFA44IcIYrYCjanY1WcTF4zyKYXFQubtbTA/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks you for your valuable feedback!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+</body>
+</html>
