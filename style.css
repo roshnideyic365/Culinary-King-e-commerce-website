@@ -133,19 +133,19 @@
     padding: 10px 20px;
     font-weight: bold;
     color: white;
+    background-color: #ff6600; /* orange background */
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     text-align: center;
-    border: 4px solid white;
+    border: none;
     border-radius: 10px;
     transition: 0.5s;
 }
 .slide_con .slide_content .slide_btn a:hover
 {
-    background-color: white;
-    color: rgb(37, 0, 19);
-    border: none;
-    border-bottom: 4px solid orange;
-    transition:0.5s;
+     background-color: white;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    transition: 0.5s;
 }
 /*------------------------------------------------SIDE----------------------------------------*/
 .side 
