@@ -24,7 +24,9 @@
     <!-- --------------------------------------------CATERING-------------------------------------------------------->
     <div class="product" style="padding-top:100px;">
         <h2>EVENTS AND CATERING</h2>
-        <div class="product_container" style="padding-bottom:50px;">
+        <section class="cards-wrapper">
+            <button class="arrow left">&#10094;</button>
+            <div class="product_container" style="padding-bottom:50px;">
             <div class="item">
                 <div class="item_img">
                     <img src="images/cele2.jpg">
@@ -75,6 +77,8 @@
                 </div>
             </div>
         </div>
+        <button class="arrow right">&#10095;</button>
+        </section>
     </div>
     <hr>
     <!-- --------------------------------------------FEED--------------------------------------------------------->
@@ -137,5 +141,33 @@
             })
           
 </script>
+
+<script>
+    const container = document.querySelector(".product_container");
+    const leftBtn = document.querySelector(".arrow.left");
+    const rightBtn = document.querySelector(".arrow.right");
+
+    leftBtn.addEventListener("click", () => {
+      container.scrollBy({ left: -300, behavior: "smooth" });
+    });
+
+    rightBtn.addEventListener("click", () => {
+      container.scrollBy({ left: 300, behavior: "smooth" });
+    });
+
+    // Hide arrows on desktop
+    const updateArrows = () => {
+      if (window.innerWidth > 768) {
+        leftBtn.style.display = "none";
+        rightBtn.style.display = "none";
+      } else {
+        leftBtn.style.display = "block";
+        rightBtn.style.display = "block";
+      }
+    };
+
+    window.addEventListener("resize", updateArrows);
+    window.addEventListener("load", updateArrows);
+  </script>
 </body>
 </html>
