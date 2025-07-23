@@ -130,23 +130,25 @@
     text-decoration: none;
     font-size: large;
     margin: 32%;
-    padding: 10px 20px;
+    padding: 12px 28px;
     font-weight: bold;
     color: white;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     text-align: center;
-    border: 4px solid white;
-    border-radius: 10px;
-    transition: 0.5s;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* hot pink to coral gradient */
+    border: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .slide_con .slide_content .slide_btn a:hover {
-    background-color: white;
-    color: rgb(37, 0, 19);
-    border: none;
-    border-bottom: 4px solid orange;
-    transition: 0.5s;
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff4b2b, #ff416c); /* reverse gradient on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
 }
+
 
 /*------------------------------------------------SIDE----------------------------------------*/
 .side {
