@@ -63,6 +63,7 @@
 
 .slide .slide_container {
     text-align: center;
+    
 }
 
 .slide .slide_container .carousel-inner {
@@ -100,6 +101,7 @@
     padding-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
+    opacity: 1;
 }
 
 .slide_con .slide_content h2 {
@@ -211,6 +213,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 60vh;
+    opacity: 0.5;
 }
 
 .main .main_content {
