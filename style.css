@@ -1,11 +1,12 @@
 /*------------------------------------------------NAVBAR----------------------------------------*/
 .nav {
-    background-color: white;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     z-index: 9;
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
     box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, .15);
+    border-bottom: 1px solid rgba(204, 0, 95, 0.1);
 }
 
 .nav_top {
@@ -37,22 +38,32 @@
     margin-right: 10px;
     margin-left: 22px;
     margin-top: 20px;
-    padding-top: 20px;
-    padding-left: 15px;
-    color: rgb(37, 0, 19);
-    font-weight: bold;
+    padding: 15px 20px;
+    color: #1a1a1a;
+    font-weight: 700;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    font-size: 16px;
     text-align: center;
-
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .nav_side a:hover {
-    color: rgb(253, 0, 84);
-    transition: all 1s ease;
+    color: #cc005f;
+    background: rgba(204, 0, 95, 0.1);
+    border-color: rgba(204, 0, 95, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(204, 0, 95, 0.2);
+}
+
+.nav_side a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(204, 0, 95, 0.15);
 }
 
 /*-------------------------------------------FIRST CAROUSEL----------------------------------------*/
