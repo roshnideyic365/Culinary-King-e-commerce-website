@@ -1,6 +1,6 @@
 /*------------------------------------------------NAVBAR----------------------------------------*/
 .nav {
-    background-color: white;
+    background-color: #F9CB99;
     z-index: 9;
     padding-left: 50px;
     padding-right: 50px;
@@ -8,11 +8,13 @@
     box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, .15);
 }
 
+
 .nav_top {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    border-radius: 20px;
 }
 
 .logo {
@@ -150,6 +152,8 @@
 
 /*------------------------------------------------SIDE----------------------------------------*/
 .side {
+    height:500px;
+    background-color: #e2d9cb;
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
@@ -160,14 +164,19 @@
 .side .left {
     float: left;
 }
+.side .left img{
+    border-radius: 20px;
+    margin-left:50px;
+}
 
 .side .right {
     float: right;
     padding-left: 10%;
+    margin-right: 100px;
 }
 
 .side .right h2 {
-    font-size: 250%;
+    font-size: 270%;
 }
 
 .side .right p {
@@ -178,7 +187,7 @@
 }
 
 .side .right .side_btn {
-    margin-top: 3%;
+    margin-top: 8%;
 }
 
 .side .right .side_btn a {
