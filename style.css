@@ -120,7 +120,7 @@
 }
 
 .slide_con .slide_content .slide_btn {
-    margin-top: 10%;
+    margin-top: 8%;
     text-align: center;
     width: 100%;
     position: relative;
@@ -128,24 +128,74 @@
 
 .slide_con .slide_content .slide_btn a {
     text-decoration: none;
-    font-size: large;
-    margin: 32%;
-    padding: 10px 20px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 800;
     color: white;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     text-align: center;
-    border: 4px solid white;
-    border-radius: 10px;
-    transition: 0.5s;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #cc005f, #a8004d, #cc005f);
+    background-size: 200% 200%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(204, 0, 95, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: gradientShift 3s ease-in-out infinite;
+}
+
+.slide_con .slide_content .slide_btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.8s ease;
+}
+
+.slide_con .slide_content .slide_btn a::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .slide_con .slide_content .slide_btn a:hover {
-    background-color: white;
-    color: rgb(37, 0, 19);
-    border: none;
-    border-bottom: 4px solid orange;
-    transition: 0.5s;
+    background: linear-gradient(135deg, #a8004d, #cc005f, #a8004d);
+    background-size: 200% 200%;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(204, 0, 95, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+    animation: gradientShift 1.5s ease-in-out infinite;
+}
+
+.slide_con .slide_content .slide_btn a:hover::before {
+    left: 100%;
+}
+
+.slide_con .slide_content .slide_btn a:hover::after {
+    opacity: 1;
+}
+
+.slide_con .slide_content .slide_btn a:active {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(204, 0, 95, 0.4);
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
 /*------------------------------------------------SIDE----------------------------------------*/
@@ -183,24 +233,69 @@
 
 .side .right .side_btn a {
     text-decoration: none;
-    font-size: large;
-    margin: 32%;
-    padding: 10px 20px;
-    font-weight: bold;
-    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     text-align: center;
-    border: 4px solid black;
-    border-radius: 10px;
-    transition: 0.5s;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #cc005f, #a8004d, #cc005f);
+    background-size: 200% 200%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 35px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(204, 0, 95, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: gradientShift 4s ease-in-out infinite;
+}
+
+.side .right .side_btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+    transition: left 0.8s ease;
+}
+
+.side .right .side_btn a::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .side .right .side_btn a:hover {
-    background-color: black;
-    color: white;
-    border: none;
-    border-bottom: 4px solid rgb(255, 34, 144);
-    transition: 0.5s;
+    background: linear-gradient(135deg, #a8004d, #cc005f, #a8004d);
+    background-size: 200% 200%;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(204, 0, 95, 0.4), 0 0 0 2px rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    animation: gradientShift 2s ease-in-out infinite;
+}
+
+.side .right .side_btn a:hover::before {
+    left: 100%;
+}
+
+.side .right .side_btn a:hover::after {
+    opacity: 1;
+}
+
+.side .right .side_btn a:active {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 6px 20px rgba(204, 0, 95, 0.3);
 }
 
 /*------------------------------------------------MAIN----------------------------------------*/
@@ -454,76 +549,186 @@
 .feed {
     background-image: url("images/feed.jpg");
     background-size: cover;
-    padding: 50px;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 20px;
     text-align: center;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    min-height: 600px;
+}
+
+.feed::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .feed h2 {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     color: white;
-    font-size: 35px;
+    font-size: 42px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .feed .feed_form {
     text-align: center;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 40px;
-    max-width: 450px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 50px 40px;
+    max-width: 500px;
     width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feed .feed_form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .feed .feed_form form {
-    padding: 20px;
+    padding: 0;
 }
 
 .feed .feed_form form input {
-    width: 60%;
-    margin: 10px;
-    padding: 8px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 20px;
     outline: none;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    /* transition: border 0.3s ease; */
+    border: 2px solid rgba(204, 0, 95, 0.2);
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
 }
 
 .feed .feed_form form textarea {
-    width: 60%;
-    margin: 10px;
-    padding: 8px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 20px;
     outline: none;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    transition: border 0.3s ease;
+    border: 2px solid rgba(204, 0, 95, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 120px;
+    box-sizing: border-box;
 }
 
 .feed .feed_form form input:focus,
 .feed .feed_form form textarea:focus {
     border-color: #cc005f;
     outline: none;
+    box-shadow: 0 0 0 3px rgba(204, 0, 95, 0.1);
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+}
+
+.feed .feed_form form input::placeholder,
+.feed .feed_form form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+    font-style: italic;
 }
 
 .feed .feed_form form button {
-    padding: 12px;
-    background-color: #cc005f;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #cc005f, #a8004d);
     color: #fff;
     border: none;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(204, 0, 95, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.feed .feed_form form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
 }
 
 .feed .feed_form form button:hover {
-    background-color: #a8004d;
+    background: linear-gradient(135deg, #a8004d, #cc005f);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(204, 0, 95, 0.4);
+}
+
+.feed .feed_form form button:hover::before {
+    left: 100%;
+}
+
+.feed .feed_form form button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(204, 0, 95, 0.3);
+}
+
+/* Responsive design for review form */
+@media screen and (max-width: 768px) {
+    .feed {
+        padding: 60px 15px;
+        min-height: 500px;
+    }
+    
+    .feed h2 {
+        font-size: 32px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .feed .feed_form {
+        padding: 40px 30px;
+        max-width: 100%;
+        margin: 0 10px;
+    }
+    
+    .feed .feed_form form input,
+    .feed .feed_form form textarea {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .feed .feed_form form button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
 }
 
 /*--------------------------------------------FOOTER----------------------------------------*/
